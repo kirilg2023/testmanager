@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+<a href="/"><button1 >Go home</button1></a>
+
+
+<h1 class="text_red">Welcome to the search games</h1>
+<p class="purple center">Here you can find games that you can play right here, without downloading. (safe and without viruses ^_^)</p>
+{% for el in games %}
+<div class="golden-text">
+    <h1>{{el.title}}</h1>
+    <a href="{% url 'news-detail' el.slug%}"><button class="bluei">Reed</button></a>
+</div>
+{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,82 @@
+.red {
+  background-color: red;
+  border: 2px solid black;
+  color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 250px;
+}
+
+button1 {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 250px;
+  border: 2px solid #04AA6D; /* Green */
+}
+
+.btn-green {
+
+  background-color: #4CAF50; /* Green */
+}
+
+.bady {
+  background: rgba(0, 128, 0, 0.3)
+}
+.Dody {
+    background-color: #1e1e1e
+}
+.lol {
+    justify-content: center
+    text-align: center;
+    display: flex;
+
+}
+
+.center {
+    display: flex;
+   justify-content: center;
+
+}
+
+.text_red {
+  color: red;
+  text-align: center;
+}
+
+.bluei {
+    background-color: #008CBA;
+    width: 250px;
+    padding: 15px 32px;
+}
+
+.index_img {
+   width: 500px
+}
+.return_img {
+   width: 150px
+}
+
+
+ul {
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#---------------------------------------------------------------
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="test-border">
+    <h1 class="word_writen">Ласкаво просимо в Книги!</h1>
+
+</div>
+<a href="{% url 'test1' %}"><img src="{% static 'main/img/return.png' %}" class="return_img"></a>
+
+
+<div class="image_center">
+    <div>
+        <h1 class="golden-text image_center">{{Tragedy}}</h1>
+        <a href="{% url 'book_list' language='ua' genre='tragedy' %}"><button ><img src="{% static 'main/img/macbeth.png'%}" class="book_img"></button></a>
+    </div>
+    <div>
+        <h1 class="golden-text image_center">{{Adventures}}</h1>
+        <a href="{% url 'book_list' language='ua' genre='adventure' %}"><button ><img src="{% static 'main/img/adven.png'%}" class="book_img"></button></a>
+    </div>
+    <div>
+        <h1 class="golden-text image_center">{{poetry}}</h1>
+        <a href="{% url 'book_list' language='ua' genre='poetry' %}"><button ><img src="{% static 'main/img/poetry.jpg'%}" class="book_img"></button></a>
+    </div>
+    <div>
+        <h1 class="golden-text image_center">{{The_Horrors}}</h1>
+        <a href="{% url 'book_list' language='ua' genre='horror' %}"><button ><img src="{% static 'main/img/university.png'%}" class="book_img"></button></a>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

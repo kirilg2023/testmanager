@@ -1,0 +1,32 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+{% load static %}
+<a href="{% url 'cheese_main' main='main' %}"><button1 >return</button1></a>
+
+<div class="center">
+    <div>
+        <a href="#🤣don't_click_on_me"><button class="bluei"><h1>Q6</h1></button></a>
+    </div><br>
+</div>
+
+<div class="center">
+    <a href="{% url 'cheese_game' q='quest_7' %}"><h1 class="purple center">CLICK THE ANSWER</h1></a>
+</div>
+
+
+
+<div class="center">
+    <a href="{% url 'cheese_main' main='lose' %}"><button class="red">OUT OF ORDER</button></a>
+    <a href="{% url 'cheese_main' main='lose' %}"><button class="red">OUT OF ORDER</button></a>
+</div><br>
+
+<div class="center">
+    <a href="{% url 'cheese_main' main='lose' %}"><button class="red">OUT OF ORDER</button></a>
+    <a href="{% url 'cheese_main' main='lose' %}"><button class="red">OUT OF ORDER</button></a>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+{% load static %}
+<a href="/"><button1 >home</button1></a>
+
+<div class="center">
+    <div>
+        <h1 class="purple">The impossible quiz 3</h1>
+        <h3 class="golden-text">Sorry it would be in English :(</h3><br>
+    </div><br>
+</div>
+
+<div class="center">
+    <a href="{% url 'cheese_game' q='quest_1' %}"><button class="red">START</button></a>
+    <a href="{% url 'cheese_main' main='info' %}"><button class="red">INFORMATION</button></a>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+{% block content %}
+{% load static %}
+<a href="{% url 'book_main_en' %}"><button1 >return</button1></a>
+
+
+<h1 class="center golden-text">{{title.c}}</h1>
+
+<h3 class="purple">{{name_book.tres}}</h3>
+<img class="return_img" src="{% static name_book.description.pdf.read.img.tres %}"><br>
+<p class="purple">{{name_book.description.tres}}</p>
+<a href="{% static name_book.description.pdf.tres %}"><button class="bluei">{{name_book.description.pdf.read.lol}}</button>
+</a>
+
+{% endblock %}

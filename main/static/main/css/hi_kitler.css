@@ -1,0 +1,51 @@
+
+.test-border {
+    border: solid;
+    border-color: #b09797;
+
+}
+.golden-text {
+    color: #ffd700
+}
+
+.purple {
+    color: #ce7af5;
+}
+
+.text {
+    color: #b59e22;
+    text-align: center;
+}
+
+
+.image_center {
+    display: flex;
+    justify-content: center
+}
+
+.imglol {
+  width: 200px;
+  height: 300px;
+}
+
+
+
+.book_img {
+   width: 300px;
+}
+
+.btn-blue {
+    font-size: 30px;
+    background-color: #04AA6D;
+}
+
+.word_writen {
+    text-align: center;
+    color: grey
+}
+
+
+.text_red {
+  color: red;
+  text-align: center;
+}

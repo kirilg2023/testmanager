@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+<div>
+    <a href="{% url 'news_home' %}"><button class="bluei">return</button></a>
+</div>
+
+<h1 class="text_red center">{{finder.title}}</h1>
+
+<div class="golden-text">
+
+    <h4 class="center">{{finder.anons}}</h4>
+    <h3 class="center">{{finder.fill_text}}</h3>
+    <a href="{{finder.url}}" class="center"><button class="red">Click to Play</button></a>
+
+</div>
+
+
+
+{% endblock %}

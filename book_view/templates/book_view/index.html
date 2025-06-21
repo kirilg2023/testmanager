@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="test-border">
+    <h1 class="word_writen">Welcome to Books</h1>
+
+</div>
+
+<a href="/"><img src="{% static 'main/img/return.png'%}" class="return_img"></a>
+
+<div class="image_center">
+    <div>
+        <h1 class="golden-text image_center">{{cook}}</h1>
+        <a href="{% url 'book_list' language='en' genre='tragedy' %}"><img src="{% static 'main/img/macbeth.png'%}" class="book_img"></a>
+    </div>
+    <div>
+        <h1 class="golden-text image_center">{{apple}}</h1>
+        <a href="{% url 'book_list' language='en' genre='adventure' %}"><img src="{% static 'main/img/adven.png'%}" class="book_img"></a>
+    </div>
+    <div>
+        <h1 class="golden-text image_center">{{dima}}</h1>
+        <a href="{% url 'book_list' language='en' genre='poetry' %}"><img src="{% static 'main/img/poetry.jpg'%}" class="book_img"></a>
+    </div>
+    <div>
+        <h1 class="golden-text image_center">{{banana}}</h1>
+        <a href="{% url 'book_list' language='en' genre='horror' %}"><img src="{% static 'main/img/university.png'%}" class="book_img"></a>
+    </div>
+
+</div>
+
+
+
+{% endblock %}
