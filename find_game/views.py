@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Finder
-from django.views.generic import DetailView
 
 def game_home(request):
     games=Finder.objects.order_by('title')

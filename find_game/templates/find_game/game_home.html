@@ -9,8 +9,10 @@
 <p class="purple center">Here you can find games that you can play right here, without downloading. (safe and without viruses ^_^)</p>
 {% for el in games %}
 <div class="golden-text">
-    <h1>{{el.title}}</h1>
-    <a href="{% url 'news-detail' el.slug%}"><button class="bluei">Reed</button></a>
+    {% if el.is_published %}
+        <h1>{{el.title}}</h1>
+        <a href="{% url 'news-detail' el.slug%}"><button class="bluei">Reed</button></a>
+    {% endif %}
 </div>
 {% endfor %}
 

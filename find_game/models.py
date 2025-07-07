@@ -8,6 +8,7 @@ class Finder(models.Model):
     anons = models.CharField('Anons', max_length=250, default='Anons')
     fill_text=models.TextField('Game_FILL')
     url = models.URLField('URL', blank=True, max_length=100)
+    is_published=models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
